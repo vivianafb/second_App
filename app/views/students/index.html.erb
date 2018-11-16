@@ -6,9 +6,12 @@
     <h1>Students</h1>
         <% @students.each do |student| %>
             <div class="well">
-                <%= student.name %>
-                <%= student.age %>
-                <%= student.email %>
+            <p> Nombre estudiante </p> 
+            <%= student.name %>
+            <p> Edad </p> 
+            <%= student.age %>
+            <p> Email </p>
+              <%= student.email %>
                 <%= link_to 'Show', student , class:'btn btn-primary'%>
                 <%= link_to 'Edit', edit_student_path(student), class: 'btn btn-primary' %> 
                 <%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-warning'  %>

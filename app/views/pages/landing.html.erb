@@ -1,0 +1,21 @@
+<h1>Pages#landing</h1>
+<p>Find me in app/views/pages/landing.html.erb</p>
+
+<div class="row">
+<table style="width:100%">
+  <tr>
+    <th>Nombre</th>
+    <th>Edad</th> 
+    <th>Email</th>
+  </tr>
+  <tr>
+  <% @students.each do |student| %>
+    <td> <%= student.name %> </td>
+    <td> <%= student.age %> </td>
+    <td> <%= student.email %> </td>
+  </tr>
+
+  <% end %>
+</table>
+
+</div>
